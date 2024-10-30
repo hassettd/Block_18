@@ -1,0 +1,41 @@
+Unit Tests:
+1.  A function called "multiplication" that returns the product of the two input numbers.
+
+Expectation: The user can input two numbers and get an accurate product returned by the function.
+
+Specifications: 
+  Use the Multiply function
+  Two variables (x,y)
+  One number returned
+  Expect answer will be correct
+  Expect answer will be same significant digits as variables
+  Expect answer will not be equal to an incorrect number.
+
+ 2.  A function called "concatOdds" takes two arrays of integers as arguments. It should return a single array that only contains the odd numbers, in ascending order, from both of the arrays.
+ Example: concatOdds([3, 2, 1], [9, 1, 1, 1, 4, 15, -1])
+ ...should result in [-1, 1, 3, 9, 15] 
+
+ Expectation: The concatOdds function will return a single array that only contains the odd numbers from both arrays, in ascending order.
+
+ Specifications:
+   Expect only odd numbers will be returned by the function
+   Expect the numbers will be ordered from smallest to largest
+   Expect unexpected inputs will be rejected if not a part of the original array
+   Expect duplicated numbers will result in an error
+
+Functional Tests
+A shopping cart checkout feature that allows a user to check out as a guest (without an account), or as a logged-in user. 
+They should be allowed to do either, but should be asked if they want to create an account or log in if they check out as a guest.
+
+Expectation: The checkout feature will allow the user to checkout as a guest or logged-in user, but they will be asked if they want to create an acocunt or log in
+if they check out as a guest.
+
+Specifications:
+  If the cart is empty the icon will show an empty cart 
+  Adding an item to the cart will prompt the user to login, create an account, or checkout as guest 
+  If the user logs in, all site features (such as discounts and coupons) will be applied to their order 
+  If the user creates an account, they will be logged in afterwards and all available features and discounts will be applied to their order
+  If the user checks out as a guest, they will miss out on the extra features and discounts available to logged-in users
+  One behavior the prompt misses is that sometimes registered users just want a quick checkout and may choose guest in order to obtain it
+  If a registered user checks out as a guest, they should be prompted to login by matching their email address or phone number 
+  to information already stored in the system.
